@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    width: 25%;
+    padding: 20px;
+    /*This puts in a space of 20px inside the containers */
+    float: left;
+    /* This is used to make the containers to float to the left. This code makes the columns to be alined side by side on the left of each other */
+}
+
+@media screen and (max-width:1000px) {
+    .column {
+        width: 50%;
+        /* This code makes the columns to become 4 pairs with 50% (Takes 50% of the screen)sizes when the browser window is being resized to the width of 1000px */
+    }
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+        /* This code makes the columns to become 4 pairs with 50% (Takes 50% of the screen)sizes when the browser window is being resized to the width of 1000px */
+    }
+}

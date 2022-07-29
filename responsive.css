@@ -1,0 +1,81 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    .head {
+        background-color: blue;
+        text-align: center;
+        color: antiquewhite;
+        padding: 60px;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .nav {
+        display: flex;
+        background-color: red;
+    }
+    
+    .nav a {
+        color: antiquewhite;
+        padding: 16px 30px 30px 30px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .row {
+        display: flex;
+        /* This code makes the elements in or takes the content in this container and puts them side by side */
+        flex-wrap: wrap;
+        /* This code helps the contents separate from eaxh other side by side */
+    }
+    
+    .left {
+        flex: 30%;
+        background-color: aqua;
+        padding: 20px;
+    }
+    
+    .right {
+        flex: 70%;
+        /*    After this, this code won't be effective, so we will have to go to the top of the page and give this website a "box-sizing" of "border-box" */
+        background-color: blue;
+        padding: 20px;
+    }
+    
+    .box {
+        display: flex;
+    }
+    
+    .image {
+        width: 100%;
+        padding: 30px;
+        height: 20px;
+    }
+    
+    @media screen and (max-width:1000px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        .box,
+        .nav {
+            flex-direction: column;
+        }
+        .box2 {
+            margin-top: 30px;
+        }
+        .text {
+            /* display: none; */
+            /* This tells the browser not to display this text when the screen is resized to 700px. This is why you'll see somethings on desktop view but won't see those things on mobile view */
+            font-size: 0px;
+        }
+    }
+    
+    footer {
+        text-align: center;
+    }

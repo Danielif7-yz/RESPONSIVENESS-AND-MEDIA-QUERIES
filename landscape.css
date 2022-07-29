@@ -1,0 +1,15 @@
+body {
+    background-color: yellow;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: blue;
+    }
+}
+
+
+/* With this code,
+the browser color is blue because the width is longer than the height,
+but when the height is longer than the width,
+then the color turns to yellow */
